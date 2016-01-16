@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PartyApp</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Access Code</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_accesscode">Enter the 8 Characters AccessCode or scan it!</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
+    <string name="title_activity_map_view">Map</string>
+    <string name="traffic">Trafic</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="none_map">None</string>
+    <string name="normal">Normal</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Terrain</string>
+    <string name="my_location">My Location</string>
+    <string name="buildings">Buildings</string>
+    <string name="transparency">Transparency</string>
+    <string name="scan_access_code">Scan Access Code</string>
+    <string name="google_maps_key">AIzaSyDjOlzx99EWmDeGN8b5wfUVP2txpNPNXe0</string>
+    <string-array name="layers_array">
+        <item>@string/normal</item>
+        <item>@string/hybrid</item>
+        <item>@string/satellite</item>
+        <item>@string/terrain</item>
+        <item>@string/none_map</item>
+    </string-array>
+</resources>
