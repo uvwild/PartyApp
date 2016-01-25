@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.funtime.partyapp" >
+    package="org.funtime.partyapp.android">
 
     <uses-sdk android:minSdkVersion="17" />
 
@@ -23,7 +23,6 @@
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.example.permission.MAPS_RECEIVE" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -33,27 +32,29 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".interaction.LoginActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="stateHidden" >
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MapViewActivity"
-            android:label="@string/title_activity_map_view" >
+            android:name=".interaction.MapViewActivity"
+            android:label="@string/title_activity_map_view">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.funtime.partyapp.LoginActivity" />
+                android:value=".interaction.LoginActivity" />
         </activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -78,6 +79,10 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".services.MotionDataIntentService"
+            android:exported="false"></service>
     </application>
 
 </manifest>

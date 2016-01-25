@@ -1,4 +1,4 @@
-package org.funtime.partyapp;
+package org.funtime.partyapp.android.interaction;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

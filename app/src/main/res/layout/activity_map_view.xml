@@ -20,15 +20,17 @@
             android:id="@+id/transparencySeekBar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
+
+        <!--        class="com.google.android.gms.maps.SupportMapFragment" -->
+
     </LinearLayout>
 
-    <!--        class="com.google.android.gms.maps.SupportMapFragment" -->
     <fragment
         android:id="@+id/map_fragment"
-        class="org.funtime.partyapp.PartyMapFragment"
+        class="org.funtime.partyapp.android.interaction.PartyMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/map_fragment" />
-
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_map"
+        android:layout_alignParentEnd="false" />
 
 </RelativeLayout>

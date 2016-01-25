@@ -9,7 +9,6 @@
     android:orientation="vertical"
     android:padding="6dp">
 
-
     <Spinner
         android:id="@+id/layers_spinner"
         android:layout_width="match_parent"
@@ -19,25 +18,25 @@
         android:id="@+id/traffic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onTrafficToggled"
         android:text="@string/traffic" />
+    <!--android:onClick="onTrafficToggled"-->
+    <!--TODO sort out the onClickHandlerNaming -->
 
     <CheckBox
         android:id="@+id/my_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="false"
-        android:onClick="onMyLocationToggled"
         android:text="@string/my_location" />
+    <!--android:onClick="onMyLocationToggled"-->
 
     <CheckBox
         android:id="@+id/buildings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:checked="true"
-        android:onClick="onBuildingsToggled"
         android:text="@string/buildings" />
-
+    <!--android:onClick="onBuildingsToggled"-->
 
     <com.google.android.gms.maps.MapView
         android:layout_width="match_parent"
